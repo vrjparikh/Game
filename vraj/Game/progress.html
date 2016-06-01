@@ -19,7 +19,7 @@ License: You must have a valid license purchased only from themeforest(the above
 
     <head>
         <meta charset="utf-8" />
-        <title>Beer Game | Distributor</title>
+        <title>Beer Game | Progress</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport" />
         <meta content="SCMGAME" name="description" />
@@ -33,7 +33,6 @@ License: You must have a valid license purchased only from themeforest(the above
         <link href="../assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN PAGE LEVEL PLUGINS -->
-        <link href="../assets/pages/css/about.min.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/bootstrap-daterangepicker/daterangepicker-bs3.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/morris/morris.css" rel="stylesheet" type="text/css" />
         <link href="../assets/global/plugins/fullcalendar/fullcalendar.min.css" rel="stylesheet" type="text/css" />
@@ -58,7 +57,7 @@ License: You must have a valid license purchased only from themeforest(the above
             <div class="page-header-inner ">
                 <!-- BEGIN LOGO -->
                 <div class="page-logo">
-                    <a href="statistics.html">
+                    <a href="index.html">
                         <img src="../assets/layouts/layout2/img/IIMA.png" alt="logo" class="logo-default" style="height:65px;margin-top:5px;"/> </a>
                     <div class="menu-toggler sidebar-toggler">
                         <!-- DOC: Remove the above "hide" to enable the sidebar toggler button on header -->
@@ -97,7 +96,13 @@ License: You must have a valid license purchased only from themeforest(the above
                                 </a>
                                 <ul class="dropdown-menu dropdown-menu-default">
                                     <li>
-                                        <a href="index.html">
+                                        <a href="page_user_profile_1.html">
+                                            <i class="icon-user"></i> My Profile </a>
+                                    </li>
+                                   
+                                    <li class="divider"> </li>
+                                    <li>
+                                        <a href="page_user_login_1.html">
                                             <i class="icon-key"></i> Log Out </a>
                                     </li>
                                 </ul>
@@ -134,44 +139,50 @@ License: You must have a valid license purchased only from themeforest(the above
                     <!-- DOC: Set data-keep-expand="true" to keep the submenues expanded -->
                     <!-- DOC: Set data-auto-speed="200" to adjust the sub menu slide up/down speed -->
                     <ul class="page-sidebar-menu  page-header-fixed page-sidebar-menu-hover-submenu " data-keep-expanded="false" data-auto-scroll="true" data-slide-speed="200">
-                        <li class="nav-item ">
-                            <a href="factory.html" class="nav-link nav-toggle">
+                        <li class="nav-item  ">
+                            <a href="" class="nav-link nav-toggle">
                                 <i class="icon-wrench"></i>
-                                <span class="title"> Factory </span>
+                                <span class="title"> Setup </span>
                                 <span class="selected"></span>
                                 <span class="arrow open"></span>
                             </a>
+                            <ul class="sub-menu">
+                                <li class="nav-item  ">
+                                    <a href="" class="nav-link nav-toggle">
+                                        <span class="title">Game</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="parameters.html" class="nav-link ">Set Parameters </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="demand.html" class="nav-link "> Set Demand </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item  ">
+                                    <a href= class="nav-link nav-toggle">
+                                        <span class="title">Teams</span>
+                                        <span class="arrow"></span>
+                                    </a>
+                                    <ul class="sub-menu">
+                                        <li class="nav-item ">
+                                            <a href="team_view.html" class="nav-link "> View Details </a>
+                                        </li>
+                                        <li class="nav-item ">
+                                            <a href="team_change.html" class="nav-link "> Change Passwords </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
                         </li>
                         <li class="nav-item  active">
-                            <a href="distributor.html" class="nav-link nav-toggle">
-                                <i class="icon-share"></i>
-                                <span class="title"> Distributor </span>
+                            <a href="progress.html" class="nav-link nav-toggle">
+                                <i class="icon-bar-chart"></i>
+                                <span class="title"> Progress </span>
                                 <span class="selected"></span>
                                 <span class="arrow open"></span>                            
-                            </a>
-                        </li>
-                        <li class="nav-item ">
-                            <a href="wholesaler.html" class="nav-link nav-toggle">
-                                <i class="icon-target"></i>
-                                <span class="title"> WholeSaler </span>
-                                <span class="selected"></span>
-                                <span class="arrow open"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item  ">
-                            <a href="retailer.html" class="nav-link nav-toggle">
-                                <i class="icon-basket-loaded"></i>
-                                <span class="title"> Retailer </span>
-                                <span class="selected"></span>
-                                <span class="arrow open"></span>
-                            </a>
-                        </li>
-                        <li class="nav-item  ">
-                            <a href="statistics.html" class="nav-link nav-toggle">
-                                <i class="icon-bar-chart"></i>
-                                <span class="title"> Statistics </span>
-                                <span class="selected"></span>
-                                <span class="arrow open"></span>
                             </a>
                         </li>
                     </ul>
@@ -242,90 +253,10 @@ License: You must have a valid license purchased only from themeforest(the above
                         </div>
                     </div>
                     <!-- END THEME PANEL -->
-                    <h3 class="page-title"> Distributor
-                        <small>Choose the Order for Distributor</small>
+                    <h3 class="page-title"> Game Progress
+                        <small>Charts & Tables Related to Game Progress</small>
                     </h3>
-                    <div class="row widget-row">
-                        <div class="col-md-3">
-                            <!-- BEGIN WIDGET THUMB -->
-                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
-                                <h4 class="widget-thumb-heading"> Incoming Order </h4>
-                                <div class="widget-thumb-wrap">
-                                    <i class="widget-thumb-icon bg-green icon-envelope-letter"></i>
-                                    <div class="widget-thumb-body">
-                                        <span class="widget-thumb-subtitle">Units</span>
-                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="7,644">0</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END WIDGET THUMB -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- BEGIN WIDGET THUMB -->
-                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
-                                <h4 class="widget-thumb-heading"> Incoming Delivery </h4>
-                                <div class="widget-thumb-wrap">
-                                    <i class="widget-thumb-icon bg-red icon-control-rewind"></i>
-                                    <div class="widget-thumb-body">
-                                        <span class="widget-thumb-subtitle">Units</span>
-                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="1,293">0</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END WIDGET THUMB -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- BEGIN WIDGET THUMB -->
-                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
-                                <h4 class="widget-thumb-heading"> Outgoing Delivery </h4>
-                                <div class="widget-thumb-wrap">
-                                    <i class="widget-thumb-icon bg-purple icon-control-forward"></i>
-                                    <div class="widget-thumb-body">
-                                        <span class="widget-thumb-subtitle">Units</span>
-                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="815">0</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END WIDGET THUMB -->
-                        </div>
-                        <div class="col-md-3">
-                            <!-- BEGIN WIDGET THUMB -->
-                            <div class="widget-thumb widget-bg-color-white text-uppercase margin-bottom-20 ">
-                                <h4 class="widget-thumb-heading"> Inventory </h4>
-                                <div class="widget-thumb-wrap">
-                                    <i class="widget-thumb-icon bg-blue icon-bar-chart"></i>
-                                    <div class="widget-thumb-body">
-                                        <span class="widget-thumb-subtitle">Units</span>
-                                        <span class="widget-thumb-body-stat" data-counter="counterup" data-value="5,071">0</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- END WIDGET THUMB -->
-                        </div>
-                    </div>
-                        <div class="col-lg-12 col-md-12" style="text-align: center;">
-                        <div class="col-lg-3 col-md-6" style="text-align: center; margin: 0px auto; clear: both; float: none;">
-                            <div class="portlet light">
-                                <div class="card-icon">
-                                    <i class="icon-layers font-blue theme-font"></i>
-                                </div>
-                                <div class="portlet-body form">
-                                    <form role="form">
-                                        <div class="form-body">
-                                            <div class="form-group form-md-line-input form-md-floating-label" >
-                                                <input type="text" class="form-control" id="form_control_1" >
-                                                <label for="form_control_1" style="text-align:left; float:none;"> Enter Your Order </label>
-                                                <span class="help-block">Enter a Valid Integer</span>
-                                            </div>
-                                        </div>
-                                        <div class="form-actions" style="text-align:left;float:none; margin:0px auto;">
-                                            <button type="button" class="btn blue">Submit</button>
-                                        </div>
-                                    </form>    
-                                </div>
-                            </div>
-                        </div>
-                        </div>
+                    
                     <!-- END PAGE HEADER-->
                     <!-- BEGIN DASHBOARD STATS 1-->
                     
