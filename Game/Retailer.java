@@ -3,7 +3,7 @@ import javax.servlet.*;
 import javax.servlet.http.*;
 import java.sql.*;
 
-public class Login extends HttpServlet 
+public class Retailer extends HttpServlet 
 {
  
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -13,18 +13,10 @@ public class Login extends HttpServlet
         
         String email = request.getParameter("username");
           String pass = request.getParameter("password");
-        if(Validate.checkUser(email, pass))
+        if(Transaction.retail(order))
         {
-               if(User.user_level(email, pass))
-               {
-                    RequestDispatcher rs = request.getRequestDispatcher("progress.html");
-                    rs.forward(request, response); 
-               }
-               else
-               {
-                    RequestDispatcher rs = request.getRequestDispatcher("statistics.html");
-                    rs.forward(request, response); 
-               }
+            RequestDispatcher rs = request.getRequestDispatcher("wholesaler.html");
+            rs.forward(request, response); 
         }
         else
         {

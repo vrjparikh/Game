@@ -1,18 +1,4 @@
 <!DOCTYPE html>
-<!-- 
-Template Name: Metronic - Responsive Admin Dashboard Template build with Twitter Bootstrap 3.3.5
-Version: 4.5
-Author: KeenThemes
-Website: http://www.keenthemes.com/
-Contact: support@keenthemes.com
-Follow: www.twitter.com/keenthemes
-Like: www.facebook.com/keenthemes
-Purchase: http://themeforest.net/item/metronic-responsive-admin-dashboard-template/4021469?ref=keenthemes
-License: You must have a valid license purchased only from themeforest(the above link) in order to legally use the theme for your project.
--->
-<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
-<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
-<!--[if !IE]><!-->
 <html lang="en">
 <!--<![endif]-->
 <!-- BEGIN HEAD -->
@@ -256,6 +242,32 @@ License: You must have a valid license purchased only from themeforest(the above
                                 <h3 class="page-title"> Parameters
                                     <small>Set the Parameters to Govern the Game</small>
                                 </h3>
+                                <div class="col-lg-12 col-md-12" style="text-align: left;">
+                                    <div class="col-md-6" style="text-align: left; margin: 0px auto; clear: both; float: none;">
+                                        <!-- BEGIN SAMPLE FORM PORTLET-->
+                                        <div class="portlet light ">
+                                            <div class="portlet-title">
+                                                <div class="caption font-green">
+                                                    <i class="icon-hourglass font-green"></i>
+                                                    <span class="caption-subject bold uppercase">Game Name</span>
+                                                </div>
+                                            </div>
+                                            <div class="portlet-body form">
+                                                <form role="form" action = "Start" method = "post">
+                                                    <div class="form-body">
+                                                        <div class="form-group form-md-line-input form-md-floating-label">
+                                                            <input type="text" name="noteams" class="form-control" id="form_control_1" >
+                                                            <label for="form_control_1">Name of the Game</label>
+                                                        </div>
+                                                        <div class="form-actions noborder">
+                                                        <button type="submit" class="btn blue">Go</button>
+                                                    </div>  
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class ="row">
                                     <!-- Begin Form 1 -->
                                     <div class="col-md-6">
@@ -268,19 +280,19 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>
                                             <div class="portlet-body form">
-                                                <form role="form">
+                                                <form role="form" action = "Parameter1" method = "post">
                                                     <div class="form-body">
                                                         <div class="form-group form-md-line-input form-md-floating-label has-error">
                                                             <input type="text" class="form-control" readonly value="Set the No. of Teams & Duration of Game" id="form_control_1">
                                                             <label for="form_control_1">Teams & Duration</label>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label">
-                                                            <input type="text" class="form-control" id="form_control_1" >
+                                                            <input type="text" name="noteams" class="form-control" id="form_control_1" >
                                                             <label for="form_control_1">Number Of Teams</label>
                                                             <span class="help-block">A Non-Negative Integer</span>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label">
-                                                            <input type="text" class="form-control" id="form_control_1">
+                                                            <input type="text" name="duration" class="form-control" id="form_control_1">
                                                             <label for="form_control_1">Duration Of Game</label>
                                                             <span class="help-block">In Weeks</span>
                                                         </div>
@@ -289,12 +301,12 @@ License: You must have a valid license purchased only from themeforest(the above
                                                             <label for="form_control_1">Initial Inventory</label>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label">
-                                                            <input type="text" class="form-control" id="form_control_1">
+                                                            <input type="text" nsme="inventory" class="form-control" id="form_control_1">
                                                             <label for="form_control_1">Set the Inventory</label>
-                                                        </div>  
-                                                    </div>
-                                                    <div class="form-actions noborder">
-                                                        <button type="button" class="btn blue">Set</button>
+                                                        </div>
+                                                        <div class="form-actions noborder">
+                                                        <button type="submit" class="btn blue">Set</button>
+                                                    </div>  
                                                     </div>
                                                 </form>
                                             </div>
@@ -311,18 +323,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                                 </div>
                                             </div>
                                             <div class="portlet-body form">
-                                                <form role="form">
+                                                <form role="form" action="Parameter2" method = "post">
                                                     <div class="form-body">
                                                         <div class="form-group form-md-line-input form-md-floating-label has-error">
                                                             <input type="text" class="form-control" readonly value="Costs Incurred for Keeping Inventory or Having Backlog" id="form_control_1">
                                                             <label for="form_control_1">Costs</label>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label">
-                                                            <input type="text" class="form-control" id="form_control_1" >
+                                                            <input type="text" name="COI" class="form-control" id="form_control_1" >
                                                             <label for="form_control_1">Cost Of Inventory</label>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label">
-                                                            <input type="text" class="form-control" id="form_control_1">
+                                                            <input type="text" name="COB" class="form-control" id="form_control_1">
                                                             <label for="form_control_1">Cost of Backlog</label>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label has-error">
@@ -330,18 +342,18 @@ License: You must have a valid license purchased only from themeforest(the above
                                                             <label for="form_control_1">Delays</label>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label">
-                                                            <input type="text" class="form-control" id="form_control_1">
+                                                            <input type="text" name="OD" class="form-control" id="form_control_1">
                                                             <label for="form_control_1">Order Delay</label>
                                                             <span class="help-block">In Weeks</span>
                                                         </div>
                                                         <div class="form-group form-md-line-input form-md-floating-label ">
-                                                            <input type="text" class="form-control" id="form_control_1">
+                                                            <input type="text" name="SD" class="form-control" id="form_control_1">
                                                             <label for="form_control_1">Shipping Delay</label>
                                                             <span class="help-block">In Weeks</span>
                                                         </div>
                                                     </div>
                                                     <div class="form-actions noborder">
-                                                        <button type="button" class="btn blue">Set</button>
+                                                        <button type="submit" class="btn blue">Set</button>
                                                     </div>
                                                 </form>
                                             </div>
